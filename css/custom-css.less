@@ -1,0 +1,130 @@
+// Import Theme CSS
+@import "stylish-portfolio.css";
+
+// Color Variables
+@grey-04: #3e3c41;
+@grey-03: #55525b;
+@grey-02: #868094;
+@grey-01: #c6c3ce;
+@grey-00: #f5f4f7;
+
+@coral-04: #ae2f26;
+@coral-03: #e44c41;
+@coral-02: #f86156;
+@coral-01: #fa7268;
+@coral-00: #f7dad8;
+
+
+// Global
+h1, h2, h3, h4, h5, h6, p {
+  color: @grey-04;
+}
+h4 {
+  font-size: 1.8rem;
+  margin-bottom: 1.4rem;
+}
+p {
+  font-size: 1.4rem;
+  margin-bottom: 1.6rem;
+}
+.content-section.bg-secondary {
+  background: @coral-03 !important;
+}
+a {
+  color: @coral-03;
+  &:hover {
+    color: @coral-04;
+  }
+}
+a.btn {
+  background: @coral-03 !important;
+  border: none !important;
+  box-shadow: none !important;
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  outline: none;
+  &:hover, &:focus, &:active {
+    background: @coral-04 !important;
+    outline: none;
+    outline: none;
+  }
+  @media (min-width: 992px) {
+    display: inline-block;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+  }
+}
+
+// Hero
+.masthead {
+  h1 {
+    line-height: 1.0;
+    margin-bottom: 1.2rem !important;
+  }
+  h3 {
+    margin-bottom: 1.2rem !important;
+  }
+  p {
+    text-shadow: 0 0 3px #fff;
+  }
+}
+
+// Services
+.section-services {
+  h2 {
+    color: @coral-00;
+  }
+  p {
+    color: @coral-00;
+  }
+}
+
+// Recent Projects
+.section-portfolio {
+  background: @grey-00;
+  .portfolio-item {
+    .caption {
+      .caption-content {
+        margin-bottom: 3rem;
+        margin-left: 3rem;
+      }
+      h2 {
+        color: @grey-00;
+        font-size: 2rem;
+        text-shadow: 0 1 3px @grey-04;
+      }
+    }
+    &:hover {
+      .caption {
+        background-color: rgba(62, 60, 65, 0.8);
+      }
+    }
+  }
+}
+
+// callout
+.callout {
+  background: @grey-00 !important;
+  padding: 8rem 0;
+  p {
+    span {
+      display: block;
+      padding: 0.2rem;
+    }
+    span.bullet {
+      display: none;
+    }
+  }
+  @media (min-width: 992px) {
+    p {
+      span {
+        display: inline-block;
+        padding: 0.4rem;
+      }
+      span.bullet {
+        display: inline-block;
+      }
+    }
+  }
+}
